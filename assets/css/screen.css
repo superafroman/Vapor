@@ -525,6 +525,7 @@ table tfoot {
 #social-links ul {
     overflow: auto;
     display: inline-block;
+    padding: 0;
 }
  
 #social-links ul li {
@@ -552,13 +553,12 @@ table tfoot {
     padding-top: 8px;
     transition: all 0.2s ease-in-out;
 }
- 
-#social-links ul li a i.fa-github:hover {
+#social-links ul li a:hover i.fa-github { 
     color:#333;
 }
-#social-links ul li a i.fa-linkedin:hover {
+#social-links ul li a:hover i.fa-linkedin { 
     color:#007bb6;
 }
-#social-links ul li a i.fa-twitter:hover {
+#social-links ul li a:hover i.fa-twitter { 
     color:#00aced;
 }
