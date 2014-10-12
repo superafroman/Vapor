@@ -518,47 +518,51 @@ table tfoot {
 }
 
 #social-links {
-
-
+  padding-bottom: 1em;
 }
-
-#social-links ul {
-    overflow: auto;
-    display: inline-block;
-    padding: 0;
-}
- 
-#social-links ul li {
-    list-style-type: none;
-    float: left;
-}
- 
-#social-links ul li a {
-    background: #205D7A;
+#social-links > div {
+  overflow: hidden;
+  text-align: center;
+  font-size: 2em;
+} 
+#social-links > div > a {
+    background: #696969;
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    display: block;
+    display: inline-block;
     margin-right: 10px;
     transition: all 0.2s ease-in-out;
 }
-#social-links ul li a:hover {
-  background: rgba(0, 0, 0, 0.05);
+#social-links a.github:hover {
+    background: #333;
 }
-
-#social-links ul li a i {
+#social-links a.twitter:hover {
+    background: #00aced;
+}
+#social-links a.linkedin:hover {
+    background: #007bb6;
+}
+#social-links .fa {
     color: #fff;
     font-size: 25px;
     text-align: center;
     padding-top: 8px;
     transition: all 0.2s ease-in-out;
 }
-#social-links ul li a:hover i.fa-github { 
-    color:#333;
+
+.soundtrack {
+  color: #000;
+  padding: 0.5em 0 0.5em 3.5em;
+  font-size: 0.8em;
+  display: block;
+  background-image: url('/assets/img/spotify-logo.png');
+  background-position: left;
+  background-repeat: no-repeat;
 }
-#social-links ul li a:hover i.fa-linkedin { 
-    color:#007bb6;
+a.soundtrack:visited {
+  color: #000;
 }
-#social-links ul li a:hover i.fa-twitter { 
-    color:#00aced;
+a.soundtrack:hover {
+  font-weight: 600;
 }
